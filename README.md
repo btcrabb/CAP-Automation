@@ -1,57 +1,28 @@
-CAP
+CAP Automated View and Phase Selection Tool
 ==============================
+Author: Brendan Crabb
+Email: brendan.crabb@hsc.utah.edu
 
 Towards fully automated cardiac statistical modeling: a deep-learning based MRI view and frame selection tool
 
 Project Organization
 ------------
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
     ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
+    │   ├── processed      <- Data sorted according to MRI view.
+    │   └── raw            <- The original, immutable data (dicom files).
+    |
+    ├── models             <- Trained and serialized models (VGG-19, ResNet50, and Xception)
     │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+    ├── notebooks          <- Jupyter notebooks for performing view classification and phase prediction
     │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    ├── reports            <- Generated analysis, saved .csv with view predictions for each series
     │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
-
-
+    └── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+                              generated with `pip freeze > requirements.txt`
+                              
 --------
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+Statistical atlases of cardiac shape and function have enabled the quantification of patient-specific heart characteristics against reference populations for a variety of conditions; however, the manual input and time required to create models has limited the clinical translation of this tool. Although deep learning has enabled ventricular segmentation and landmark localization, manual cardiac view and phase identification are still required, preventing end-to-end automation and processing times consistent with a clinical workflow. To address this barrier, we developed a fully-automated method for cardiac view and end-systolic (ES) phase selection. 
+
+To perform automated view identification and selection, use the jupyter notebook "CAP View Prediction.ipynb". This notebook utilizes three trained neural networks (VGG-19, ResNet50, and Xception) to perform view classification at the frame and series level. The algorithms were trained on a multi-institutional dataset of labeled T1-weighted MR images from 1,610 series of 61 patients with tetralogy of Fallot. For additional information and access to the original data, please email the authors. 
