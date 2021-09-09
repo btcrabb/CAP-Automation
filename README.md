@@ -10,7 +10,8 @@ Project Organization
 
     ├── data
     │   ├── processed      <- Data sorted according to MRI view.
-    │   └── raw            <- The original, immutable data (dicom files).
+    │   ├── raw            <- The original, immutable data (dicom files).
+    │   └── example        <- An example folder of dicom files
     |
     ├── models             <- Trained and serialized models (VGG-19, ResNet50, and Xception)
     │
@@ -39,7 +40,7 @@ VGG19: url = 'https://drive.google.com/u/0/uc?id=1Dmxs6Xpx9yBJA5R4W_tOvY4l0Y2YiE
 
 Xception: url = 'https://drive.google.com/u/0/uc?id=19H8faj-jtvNmlhuIxQEOFGdFez4ku8xv&export=download'
 
-Alternatively, they can be downloaded using the gdown and the jupyter notebook, 'Download Trained Models.ipynb'. 
+Alternatively, they can be downloaded using gdown and the jupyter notebook, 'Download Trained Models.ipynb'. 
 
 Original Performance
 ------------
