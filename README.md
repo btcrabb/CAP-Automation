@@ -1,6 +1,7 @@
 CAP Automated View and Phase Selection Tool
 ==============================
 Author: Brendan Crabb
+
 Email: brendan.crabb@hsc.utah.edu
 
 Towards fully automated cardiac statistical modeling: a deep-learning based MRI view and frame selection tool
