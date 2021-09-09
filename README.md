@@ -25,7 +25,21 @@ Project Organization
 
 Statistical atlases of cardiac shape and function have enabled the quantification of patient-specific heart characteristics against reference populations for a variety of conditions; however, the manual input and time required to create models has limited the clinical translation of this tool. Although deep learning has enabled ventricular segmentation and landmark localization, manual cardiac view and phase identification are still required, preventing end-to-end automation and processing times consistent with a clinical workflow. To address this barrier, we developed a fully-automated method for cardiac view and end-systolic (ES) phase selection. 
 
-To perform automated view identification and selection, use the jupyter notebook "CAP View Prediction.ipynb". This notebook utilizes three trained neural networks (VGG-19, ResNet50, and Xception) to perform view classification at the frame and series level. The algorithms were trained on a multi-institutional dataset of labeled T1-weighted MR images from 1,610 series of 61 patients with tetralogy of Fallot. For additional information and access to the original data, please email the authors. 
+
+Getting Started
+------------
+
+To perform automated view identification and selection, use the jupyter notebook "CAP View Prediction.ipynb". This notebook utilizes three trained neural networks (VGG-19, ResNet50, and Xception) to perform view classification at the frame and series level. The algorithms were trained on a multi-institutional dataset of labeled T1-weighted MR images from 1,610 series of 61 patients with tetralogy of Fallot. For additional information and access to the original data, please email the authors.
+
+The trained models can be accessed at the following links:
+ResNet50: url = 'https://drive.google.com/u/0/uc?id=1PNTthLKk4qtpS3qedQPsJrQKev5x875n&export=download'
+VGG19: url = 'https://drive.google.com/u/0/uc?id=1Dmxs6Xpx9yBJA5R4W_tOvY4l0Y2YiEAN&export=download'
+Xception: url = 'https://drive.google.com/u/0/uc?id=19H8faj-jtvNmlhuIxQEOFGdFez4ku8xv&export=download'
+
+Alternatively, they can be downloaded using the gdown and the jupyter notebook, 'Download Trained Models.ipynb'. 
+
+Original Performance
+------------
 
 In the intial analysis, the network VGG-19 achieved the best performance for MRI view classification with a weighted average ROC AUC of 0.998 and an F1-score of 0.97 on the test dataset. ResNet50 and Xception performed similarly with ROC AUCs of 0.996 and 0.995 and F1-scores of 0.98 and 0.95, respectively. For ES phase selection, the ResNet50-LSTM network had the best performance with an average absolute frame difference (aaFD) of 1.36 ± 1.12 frames. This score is comparable to the inter-observer variation between the two manual annotators in this study (aaFD 1.39 ± 1.35; p value = 0.89). Notably, model inference time was less than 0.36 seconds per series on average when executed on a GPU. 
 
