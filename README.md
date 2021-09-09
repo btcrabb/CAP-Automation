@@ -29,7 +29,7 @@ Statistical atlases of cardiac shape and function have enabled the quantificatio
 Getting Started
 ------------
 
-To perform automated view identification and selection, use the jupyter notebook "CAP View Prediction.ipynb". This notebook utilizes three trained neural networks (VGG-19, ResNet50, and Xception) to perform view classification at the frame and series level. The algorithms were trained on a multi-institutional dataset of labeled T1-weighted MR images from 1,610 series of 61 patients with tetralogy of Fallot. For additional information and access to the original data, please email the authors.
+To perform automated view identification and selection, use the jupyter notebook "CAP View Prediction.ipynb". This notebook utilizes a trained neural network (VGG-19, ResNet50, or Xception) to perform view classification at the frame and series level. The algorithms were trained on a multi-institutional dataset of labeled T1-weighted MR images from 1,610 series of 61 patients with tetralogy of Fallot. For additional information and access to the original data, please email the authors.
 
 The trained models can be accessed at the following links:
 
