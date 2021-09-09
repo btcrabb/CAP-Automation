@@ -29,8 +29,8 @@ To perform automated view identification and selection, use the jupyter notebook
 
 In the intial analysis, the network VGG-19 achieved the best performance for MRI view classification with a weighted average ROC AUC of 0.998 and an F1-score of 0.97 on the test dataset. ResNet50 and Xception performed similarly with ROC AUCs of 0.996 and 0.995 and F1-scores of 0.98 and 0.95, respectively. For ES phase selection, the ResNet50-LSTM network had the best performance with an average absolute frame difference (aaFD) of 1.36 ± 1.12 frames. This score is comparable to the inter-observer variation between the two manual annotators in this study (aaFD 1.39 ± 1.35; p value = 0.89). Notably, model inference time was less than 0.36 seconds per series on average when executed on a GPU. 
 
-![alt text](https://github.com/btcrabb/CAP-Automation/blob/master/reports/figures/f1_scores.png?raw=true)
+![f1](https://github.com/btcrabb/CAP-Automation/blob/master/reports/figures/f1_scores.png 112)
 
-![alt text](https://github.com/btcrabb/CAP-Automation/blob/master/reports/figures/correlation_matrix.png?raw=true)
+![corr](https://github.com/btcrabb/CAP-Automation/blob/master/reports/figures/correlation_matrix.png 112)
 
-![alt text](https://github.com/btcrabb/CAP-Automation/blob/master/reports/figures/attention.png?raw=true)
+![att](https://github.com/btcrabb/CAP-Automation/blob/master/reports/figures/attention_maps.png 112)
