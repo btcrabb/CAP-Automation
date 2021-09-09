@@ -32,8 +32,11 @@ Getting Started
 To perform automated view identification and selection, use the jupyter notebook "CAP View Prediction.ipynb". This notebook utilizes three trained neural networks (VGG-19, ResNet50, and Xception) to perform view classification at the frame and series level. The algorithms were trained on a multi-institutional dataset of labeled T1-weighted MR images from 1,610 series of 61 patients with tetralogy of Fallot. For additional information and access to the original data, please email the authors.
 
 The trained models can be accessed at the following links:
+
 ResNet50: url = 'https://drive.google.com/u/0/uc?id=1PNTthLKk4qtpS3qedQPsJrQKev5x875n&export=download'
+
 VGG19: url = 'https://drive.google.com/u/0/uc?id=1Dmxs6Xpx9yBJA5R4W_tOvY4l0Y2YiEAN&export=download'
+
 Xception: url = 'https://drive.google.com/u/0/uc?id=19H8faj-jtvNmlhuIxQEOFGdFez4ku8xv&export=download'
 
 Alternatively, they can be downloaded using the gdown and the jupyter notebook, 'Download Trained Models.ipynb'. 
