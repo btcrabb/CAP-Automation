@@ -30,6 +30,8 @@ Statistical atlases of cardiac shape and function have enabled the quantificatio
 Getting Started
 ------------
 
+##### View Selection
+
 To perform automated view identification and selection, use the jupyter notebook "CAP View Prediction.ipynb". This notebook utilizes a trained neural network (VGG-19, ResNet50, or Xception) to perform view classification at the frame and series level. The algorithms were trained on a multi-institutional dataset of labeled T1-weighted MR images from 1,610 series of 61 patients with tetralogy of Fallot. For additional information and access to the original data, please email the authors.
 
 The trained models can be accessed at the following links:
@@ -41,6 +43,15 @@ VGG19: url = 'https://drive.google.com/u/0/uc?id=1Dmxs6Xpx9yBJA5R4W_tOvY4l0Y2YiE
 Xception: url = 'https://drive.google.com/u/0/uc?id=19H8faj-jtvNmlhuIxQEOFGdFez4ku8xv&export=download'
 
 Alternatively, they can be downloaded using gdown and the jupyter notebook, 'Download Trained Models.ipynb'. 
+
+
+##### Phase Selection
+
+Automated end-systolic phase selection can be completed using the jupyter notebook "CAP ES Phase Selection.ipynb". This notebook utilizes a CNN-LSTM network to predict the ES phase. The task is formulated as a regression problem, with the labels being generated as a guassian distribution around the ES frame. The trained models can be found at the following google drive links:
+
+ResNet50-LSTM: url = 'https://drive.google.com/file/d/1ZnRZ8ZKhErokteack12wMz-5racHhjdP/view?usp=sharing'
+
+VGG19-LSTM: url = 'https://drive.google.com/file/d/1AvGNAgA37iIYRqq1yWXMiLI1iBZCihhe/view?usp=sharing'
 
 Original Performance
 ------------
