@@ -39,7 +39,6 @@ chardet==3.0.4
 clang==5.0
 click==7.1.2
 cloudpickle==1.6.0
-clyent==1.2.2
 colorama==0.4.4
 contextlib2==0.6.0.post1
 coverage==5.4
