@@ -47,7 +47,7 @@ Alternatively, they can be downloaded using gdown and the jupyter notebook, 'Dow
 
 #### Phase Selection
 
-Automated end-systolic phase selection can be completed using the jupyter notebook "CAP ES Phase Selection.ipynb". This notebook utilizes a CNN-LSTM network to predict the ES phase. The task is formulated as a regression problem, with the labels being generated as a guassian distribution around the ES frame. The trained models can be found at the following google drive links:
+Automated end-systolic phase selection can be completed using the jupyter notebook "CAP ES Phase Prediction.ipynb". This notebook utilizes a CNN-LSTM network to predict the ES phase. The task is formulated as a regression problem, with the labels being generated as a guassian distribution around the ES frame. The trained models can be found at the following google drive links:
 
 ResNet50-LSTM: url = 'https://drive.google.com/file/d/1ZnRZ8ZKhErokteack12wMz-5racHhjdP/view?usp=sharing'
 
