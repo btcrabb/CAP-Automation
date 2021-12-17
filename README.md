@@ -80,9 +80,9 @@ A brief tutorial video is provided in the 'reports/videos/' folder, titled cap_v
 
 To start the application, enter the following into the command line:
 
-'''
-~\CAP-automation\> python viewer.py
-'''
+    '''
+    ~\CAP-automation\> python viewer.py
+    '''
 
 ### Feature List:
 1. Display predictions (with confidence level) and manual annotations.
