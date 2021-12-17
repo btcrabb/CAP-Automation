@@ -70,3 +70,30 @@ In the intial analysis, the network VGG-19 achieved the best performance for MRI
 
 ![att](https://github.com/btcrabb/CAP-Automation/blob/master/reports/figures/attention_maps.png)
 ### Figure 3: Attention, saliency, and GradCAM++ maps for the VGG19 model
+
+Result Viewer and Manual Annotation Tool
+------------
+
+In many cases, we may want to review (and possibly revise) the neural network's predictions. To do this, I created a simple python application to iterate through the images and display the associated predictions. Predictions may be revised if desired. 
+
+A brief tutorial video is provided in the 'reports/videos/' folder, titled cap_viewer_overview.mp4.
+
+To start the application, enter the following into the command line:
+
+'''
+~\CAP-automation\> python viewer.py
+'''
+
+### Feature List:
+1. Display predictions (with confidence level) and manual annotations.
+2. Accept predicted view as the manual annotation.
+3. Select correct view labels.
+4. Images displayed with window width/level info in dicom header. 
+5. Display relevant dicom info.
+6. Play cine files.
+7. Skip through available series, forward or backwards.
+8. Load new patients and/or predictions.
+9. Annotations autosaved (every 10 series) or manually. 
+
+![att](https://github.com/btcrabb/CAP-Automation/blob/master/reports/figures/cap_viewer_info.png)
+### Figure 4: Main GUI and key features of the viewer application
