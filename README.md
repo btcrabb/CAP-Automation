@@ -95,5 +95,5 @@ To start the application, enter the following into the command line:
 8. Load new patients and/or predictions.
 9. Annotations autosaved (every 10 series) or manually. 
 
-![att](https://github.com/btcrabb/CAP-Automation/blob/master/reports/figures/cap_viewer_info.png)
+![att](https://github.com/btcrabb/CAP-Automation/blob/master/reports/figures/cap_viewer_info2.png)
 ### Figure 4: Main GUI and key features of the viewer application.
