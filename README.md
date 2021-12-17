@@ -96,4 +96,4 @@ To start the application, enter the following into the command line:
 9. Annotations autosaved (every 10 series) or manually. 
 
 ![att](https://github.com/btcrabb/CAP-Automation/blob/master/reports/figures/cap_viewer_info.png)
-### Figure 4: Main GUI and key features of the viewer application
+### Figure 4: Main GUI and key features of the viewer application.
