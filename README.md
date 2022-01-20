@@ -76,7 +76,21 @@ Result Viewer and Manual Annotation Tool
 
 In many cases, we may want to review (and possibly revise) the neural network's predictions. To do this, I created a simple python application to iterate through the images and display the associated predictions. Predictions may be revised if desired. 
 
-A brief tutorial video is provided in the 'reports/videos/' folder, titled cap_viewer_overview.mp4.
+A brief tutorial video is provided in the 'reports/videos/' folder, titled cap_viewer_overview.mp4. The expected directory structure is the following (note that only one patient should be selected at a time):
+
+Expected Directory Structure
+------------
+
+    ├── Patient Directory (selected)
+        ├── Series 1
+        │       ├── 1.dcm
+        │       ├── 2.dcm
+        │       └── 3.dcm ...
+        │
+        └── Series 2            
+                ├── 1.dcm
+                ├── 2.dcm
+                └── 3.dcm ...
 
 To start the application, enter the following into the command line:
 
